@@ -1,0 +1,25 @@
+Install express globally for ease of use.
+
+$ npm install -g express
+
+Create the base nodesite application.
+
+$ express -e nodesite
+$ cd nodesite
+$ npm install
+
+Check that we have the template application installed.
+
+$ node app
+
+Point the browser at localhost:3000 and see if the page exists.
+
+Start a git repository for the project.
+
+$ git init
+
+Create a .gitignore file and add a line to omit the modules that are installed in the local module directory.
+
+# Omit local modules.
+node_modules/
+

@@ -20,10 +20,14 @@ Point the browser at localhost:3000 and see if the page exists.
 
 $ git init
 
-Create a .gitignore file and add a line to omit the modules that are installed in the local module directory.
+6. Create a .gitignore file and add a line to omit the modules that are installed in the local module directory.
 
 # Omit local modules.
 node_modules/
 
 $ git add .
+
+7. Add the mongodb and mongoose support to node.
+$ npm install mongodb
+$ npm install mongoose
 

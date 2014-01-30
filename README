@@ -31,3 +31,6 @@ $ git add .
 $ npm install mongodb
 $ npm install mongoose
 
+8. Install mocha for testing.
+$ npm install -g mocha
+

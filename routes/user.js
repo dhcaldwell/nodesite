@@ -3,6 +3,15 @@
  * GET users listing.
  */
 
+var User = require('../model/users');
+
 exports.list = function(req, res){
-  res.send("respond with a resource");
+  User.list({}, function(err, ul){
+    if (err) return "Error: " + err;
+    if (req.accepts('html')) {
+      res.render('users', {title: 'NodeSite', users: ul});
+    } else {
+      res.json(ul);
+    }
+  });
 };

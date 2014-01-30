@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% users.forEach(function(user) { %>
+      <div class="user">
+        <h2><%= user.displayName %></h2>
+        @<a href='mailto:<%= user.email %>'><%= user.name %></a>
+      </div>
+    <% }) %>
+  </body>
+</html>

@@ -3,7 +3,7 @@
  * GET users listing.
  */
 
-var User = require('../model/users');
+var User = require('../model/user');
 
 exports.list = function(req, res){
   User.list({}, function(err, ul){

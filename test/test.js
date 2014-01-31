@@ -1,5 +1,6 @@
 var assert = require("assert")
 var User = require('../model/users');
+var Content = require('../model/content');
 
 describe('Users', function(){
   describe('Collection', function(){
@@ -30,6 +31,25 @@ describe('Users', function(){
         done();
       });
     });
+  });
+});
+
+describe('Content', function(){
+  it('should allow a save', function(done){
+    var u = {};
+    User.findByName('super', function(err,user){
+      u = user;
+    });
+    assert.ok(u);
+    var c = new Content({author: u,
+                        title: 'Things I learned about Node.js today.',
+                        type:'text',
+                        content: 'You are better off using a lint program.'});
+    assert.ok(c);
+    c.save(function(err){
+      if (err) return done(err);
+    });
+    done();
   });
 });
 

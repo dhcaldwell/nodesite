@@ -14,6 +14,7 @@
     "ejs": "*"
   },
   "devDependencies": {
-    "gulp-jshint": "~1.3.4"
+    "gulp-jshint": "~1.3.4",
+    "gulp-mocha": "~0.4.1"
   }
 }

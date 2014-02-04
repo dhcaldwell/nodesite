@@ -12,9 +12,9 @@ function Content(obj) {
 Content.prototype.save = function(cb) {
   content.push(this);
   cb();
-}
+};
 
 Content.list = function(cb) {
   cb(null, content);
-}
+};
 

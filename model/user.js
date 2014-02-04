@@ -23,7 +23,7 @@ function User(obj) {
 User.prototype.save = function(cb) {
   users.push(this);
   cb();
-}
+};
 
 User.list = function(filter, cb) {
   cb(null, users);
@@ -35,5 +35,5 @@ User.findByName = function(userName, cb) {
     if (users[i].name == userName) user = users[i];
   }
   cb(null, user);
-}
+};
 

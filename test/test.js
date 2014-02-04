@@ -1,4 +1,4 @@
-var assert = require("assert")
+var assert = require("assert");
 var User = require('../model/user');
 var Content = require('../model/content');
 
@@ -17,7 +17,7 @@ describe('Users', function(){
         if (err) return done(err);
         assert.ok(data.length);
         done();
-      })
+      });
     });
     it('We should be able to save a user.', function(done){
       var u = new User({name:'test', displayName: 'Test User',

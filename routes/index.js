@@ -3,6 +3,10 @@
  * GET home page.
  */
 
+var Content = require('../model/content');
+
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+  Content.list(function(err,content){
+    res.render('index', { title: 'Express', content: content });
+  });
 };

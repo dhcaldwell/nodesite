@@ -7,5 +7,15 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <% content.forEach(function(article) { %>
+    <article>
+      <div class='title'><%= article.title %></div>
+      <div class='byLine'><%= article.author.name %> Created: <%= article.created.toDateString() %></div>
+      <div class='content'><%= article.content %></div>
+    </article>
+    <% }); %>
+    <% if (content.length == 0) { %>
+    <div class='content'>No content found. Maybe you could add something.</div>
+    <% } %>
   </body>
 </html>

@@ -1,3 +1,5 @@
+"use strict";
+
 var content = [];
 
 content.push({
@@ -7,8 +9,20 @@ content.push({
     uuid: '00000000000000000000000000000000'
   },
   created: new Date(),
+  published: new Date(),
   title: 'Welcome',
   content: 'This is the home page for Dennis Did This.'
+});
+
+content.push({
+  author: {name: 'Anonymous', 
+    displayName: 'Anonymous', 
+    email: 'nobody@example.com', 
+    uuid: '00000000000000000000000000000000'
+  },
+  created: new Date(),
+  title: 'Under Construction',
+  content: "You shouldn't see this. It's under construciton and does not have a published date."
 });
 
 module.exports = Content;

@@ -32,5 +32,10 @@ $ npm install mongodb
 $ npm install mongoose
 
 8. Install mocha for testing.
-$ npm install -g mocha
+$ sudo npm install -g mocha
 
+9. Install gulp for building.
+$ sudo npm install -g gulp
+
+10. Install gulp for local project builds
+$ npm install gulp

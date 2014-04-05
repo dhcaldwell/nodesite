@@ -8,13 +8,15 @@ gulp.task('lint', function(){
             './views/*.js', 
             './routes/*.js', 
             './test/*.js', 
+            './lib/*.js',
             './app.js'])
     .pipe(jshint({node: true}))
     .pipe(jshint.reporter('default'));
 });
 
 gulp.task('test', function(){
-  gulp.src('./test/test.js')
+  gulp.src(['./test/test.js', 
+            './test/testDb.js'])
     .pipe(mocha({}));
 });
 

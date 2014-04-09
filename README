@@ -39,3 +39,7 @@ $ sudo npm install -g gulp
 
 10. Install gulp for local project builds
 $ npm install gulp
+
+11. Install node-uuid for UUID support.
+$ npm install node-uuid
+

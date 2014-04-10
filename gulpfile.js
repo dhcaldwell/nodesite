@@ -15,8 +15,7 @@ gulp.task('lint', function(){
 });
 
 gulp.task('test', function(){
-  gulp.src(['./test/test.js', 
-            './test/testDb.js'])
+  gulp.src('./test/*.js')
     .pipe(mocha({}));
 });
 
